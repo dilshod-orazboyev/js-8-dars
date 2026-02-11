@@ -30,4 +30,26 @@ console.log(Math.pow(9999, 999));
 console.log(Math.abs(-111));
  
 
+// Random 
+const randomNumberOne = Math.round(Math.random()*10);
+console.log(randomNumberOne);
+
+
+
+
+        // CODE
+        
+// isIntejer - qiymatning butun son ekanligini tekshiradi. 
+console.log(Number.isInteger(10));      // true
+console.log(Number.isInteger("10"));    // false (satr/string)
+
+// parseFloat -  konvertatsiya (satrni o'nlik songa aylantirish).
+let numberString = "3.14";
+let number = parseFloat(numberString);
+console.log(number); 
+console.log(typeof number); 
+
+// isSafeInteger - Statik usul berilgan qiymat xavfsiz butun ekanligini aniqlaydi .
+Number.isSafeInteger(10);   // true
+Number.isSafeInteger(Math.pow(2, 53)); // false
 
